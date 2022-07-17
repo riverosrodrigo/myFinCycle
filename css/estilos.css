@@ -352,6 +352,10 @@ footer div p {
         justify-content: center;
         align-items: center;
     }
+    .home h2 a{
+        text-decoration: none;
+        color: #071E3D;
+    }
     /* contenido home */
     .cajaTablet{
         margin-top: 70%;
