@@ -66,8 +66,15 @@ ul.show{
     }
 }
 @media screen and (max-width: 858px) {
+    header{
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+    }
     .menu{
-        height: 65px;
+        top: 0;
+        height: 104px;
     }
     .btn_menu{
         display: inline-flex;
@@ -81,6 +88,7 @@ ul.show{
         transition: all .4s;
         flex-direction: column;
         backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
     }
     .menu_items li {
         margin: 30px 0 0 0;
@@ -88,11 +96,11 @@ ul.show{
     }
     .menu_items li a {
         font-size: 20px;
-        color: #071E3D;
+        color: #21E6C1;
         font-weight: bold;
     }
     .menu_items li a:hover {
-        color: #21E6C1;
+        color: #071E3D;
     }
     .logo{
         font-size: 25px;
@@ -305,6 +313,16 @@ footer div p {
     color: #fff;
     font-size: 11px;
 }
+@media screen and (min-width:360px) {
+    header{
+        margin: 0px 0px;
+    }
+    ul.show {
+        top: 85px;
+        right: 16px;
+    }
+}
+
 /* responsive tablet 768px */
 @media screen and (min-width:768px) {
     body{
@@ -313,9 +331,6 @@ footer div p {
         background-position: 100% 13%;
     }
     /* header */
-    header{
-        margin: 50px 0px;
-    }
     header .logo{
         height: 100px;
     }
@@ -330,7 +345,7 @@ footer div p {
         margin-top: 80px;
     }
     ul.show {
-        top: 163px;
+        top: 102px;
         right: 16px;
     }
     /* main */
@@ -453,6 +468,9 @@ footer div p {
         display: flex;
         background-color: rgba(255, 255, 255, 0);
     }
+    header{
+        margin: 50px 0px;
+    }
     header .menu{
         justify-content: space-between;
         align-items: center;
@@ -494,6 +512,9 @@ footer div p {
     body{
         background-image: url(../img-iconos/Ilustracion\ home\ WEB.png);
         background-position: 74% 1%;
+    }
+    header{
+        margin: 50px 0px;
     }
     .cajaTablet {
         margin-top: 30%;
