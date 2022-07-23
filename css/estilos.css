@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* reset */
 *{
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing:border-box ;
     box-sizing: border-box;
+}
+/* general */
+html{
+    scroll-behavior: smooth;
 }
 /* header */
 header .contenedor{
@@ -348,7 +353,7 @@ footer div p {
     body{
         background-image: url(../img-iconos/Ilustracion\ home\ Tablet.png);
         background-repeat: no-repeat;
-        background-position: 100% 13%;
+        background-position: 100% 10%;
     }
     /* header */
     header .logo{
@@ -482,20 +487,25 @@ footer div p {
 @media screen and (min-width:1300px){
     body{
         background-image: url(../img-iconos/Ilustracion\ home\ WEB.png);
-        background-position: 93% 1%;
+        background-position: 93% 4%;
     }
     /* header */
     header{
-        display: flex;
-        background-color: rgba(255, 255, 255, 0);
+        margin: 20px 0px;
+        background-color: #fff;
+        height: auto;
+        position: sticky;
+        top: 0;
     }
-    header{
-        margin: 50px 0px;
+    header a .logo {
+        height: auto;
+        width: auto;
     }
+    
     header .menu{
         justify-content: space-between;
         align-items: center;
-        background-color: rgba(255, 255, 255, 0); 
+        
     }
     header nav .menu_items li a{
         font-size: 25px;
@@ -507,7 +517,7 @@ footer div p {
         justify-content: flex-start;
     }
     .cajaTablet{
-        margin-top: 24%;
+        margin-top: 40%;
     }
     .home .sobreNosotros{
         display: flex;
@@ -532,12 +542,19 @@ footer div p {
 @media screen and (min-width:1900px){
     body{
         background-image: url(../img-iconos/Ilustracion\ home\ WEB.png);
-        background-position: 74% 1%;
+        background-position: 74% 6%;
     }
     header{
         margin: 50px 0px;
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+    }
+    header .menu{
+        display: flex;
+        justify-content: space-between;
     }
     .cajaTablet {
-        margin-top: 30%;
+        margin-top: 40%;
     }
 }
