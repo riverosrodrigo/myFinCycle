@@ -334,7 +334,8 @@ footer div p {
     }
     ul.show {
         top: 85px;
-        right: 16px;
+        right: -29px;
+        width: 100%;
     }
     .home h2 a{
         text-decoration: none;
@@ -365,7 +366,8 @@ footer div p {
     }
     ul.show {
         top: 102px;
-        right: 16px;
+        right: -30px;
+        width: 100%;
     }
     /* main */
     .home .tituloMain{
